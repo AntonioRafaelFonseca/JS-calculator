@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@1,300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.calc {
+  display: flex;
+  width: 400px;
+  height: 420px;
+  align-items: center;
+  background-color: rgb(201, 201, 201);
+  border-radius: 30px;
+  flex-direction: column;
+}
+.buttons {
+  margin-top: -10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+button {
+  border: none;
+  background-color: rgb(150, 150, 150);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  font-family: 'Google Sans Code';
+  font-weight: bolder
+}
+button:hover {
+  background-color: rgb(114, 114, 114);
+}
+button:active {
+  background-color: rgb(157, 157, 157);
+}
+.display {
+  border: 3px solid hsl(0, 2%, 50%);
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 65%);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  height: 35px;
+  width: 370px;
+  text-align: left;
+  font-family: 'Google Sans Code';
+  font-weight: bolder
+}
+#small {
+  width: 20px;
+  height: 20px;
+  margin-left: -350px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
