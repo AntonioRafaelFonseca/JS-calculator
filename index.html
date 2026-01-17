@@ -8,25 +8,30 @@
 </head>
 <body>
   <div class="calc">
+    
     <input type="text" class="display" id="display" readonly>
-    <button id="small" onclick="clearDisp()">C</button>
+    <div class="smallCont">
+      <button id="small" onclick="clearDisp()">C</button>
+      <button id="small" onclick="saveNum()">M+</button>
+      <button id="smaller" onclick="append(answ)">Ans</button>
+    </div>
     <div class="buttons">
       <button onclick="append('9')">9</button>
       <button onclick="append('8')">8</button>
       <button onclick="append('7')">7</button>
-      <button onclick="append('+')">+</button>
+      <button onclick="append('+')" id="org">+</button>
       <button onclick="append('6')">6</button>
       <button onclick="append('5')">5</button>
       <button onclick="append('4')">4</button>
-      <button onclick="append('-')">-</button>
+      <button onclick="append('-')" id="org">-</button>
       <button onclick="append('3')">3</button>
       <button onclick="append('2')">2</button>
       <button onclick="append('1')">1</button>
-      <button onclick="append('*')">*</button>
+      <button onclick="append('*')" id="org">*</button>
       <button onclick="append('.')">.</button>
       <button onclick="append('0')">0</button>
-      <button onclick="result()">=</button>
-      <button onclick="append('/')">/</button>
+      <button onclick="result()" id="equal">=</button>
+      <button onclick="append('/')" id="org">/</button>
     </div>
   </div>
   <script src="main.js"></script>
